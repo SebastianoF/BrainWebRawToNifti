@@ -16,7 +16,7 @@ Each subject has a T1, 12 individual fuzzy segmentations, and the discrete segme
 This useful resource comes to the limitation that each individual subject can be downloaded only in MINC format
 or as raw data (and each component must be downloaded individually, writing name email and institution in a small form).
 
-The code provided in this repository is aimed at helping in the conversion of the raw data to nifti (after download), 
+The code provided [in this repository][here] is aimed at helping in the conversion of the raw data to nifti (after download), 
 creating a label descriptor for ITK-snap visualisation and to provide access to further manipulation.
 
 
@@ -69,3 +69,4 @@ It is based on [numpy], [nibabel] and [LABelsToolkit][LABelsToolkit].
 [numpy]: http://www.numpy.org/
 [nibabel]: http://nipy.org/nibabel/
 [matplotlib]: https://matplotlib.org/
+[here]: https://github.com/SebastianoF/BrainWebRawToNifti.git

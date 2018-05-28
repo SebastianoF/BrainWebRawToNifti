@@ -26,7 +26,7 @@ creating a label descriptor for ITK-snap visualisation and to provide access to 
 
     + Create a folder <data_raw> where to store your zipped files.
     
-    + Click on the `Twenty normal anatomical models` link, leading to [this][http://brainweb.bic.mni.mcgill.ca/brainweb/anatomic_normal_20.html] page
+    + Click on the `Twenty normal anatomical models` link, leading to [this][brainweb_subpage] page
     
     + For each subject in the drop down menu (numbered from 04) download each single component in the same folder. Select
     
@@ -64,6 +64,7 @@ It is based on [numpy], [nibabel] and [LABelsToolkit][LABelsToolkit].
 [paperLorber]: http://science.sciencemag.org/content/210/4475/1232/tab-pdf
 [paoerForsdyke]: https://link.springer.com/article/10.1007%2Fs13752-015-0219-x
 [brainweb]: http://brainweb.bic.mni.mcgill.ca/brainweb/
+[brainweb_subpage]: http://brainweb.bic.mni.mcgill.ca/brainweb/
 [giftsurg]: http://www.gift-surg.ac.uk
 [LABelsToolkit]:https://github.com/SebastianoF/LABelsToolkit
 [numpy]: http://www.numpy.org/

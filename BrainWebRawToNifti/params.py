@@ -6,7 +6,8 @@ pfo_root = '/my_data_folder/'  # set here the folder where the downloaded datase
 
 if not os.path.exists(pfo_root):
     here = os.path.dirname(os.path.abspath(__file__))
-    print('Please set up the path to the folder paths in {}'.format(here))
+    print('Please set up the path to the folder where raw data are stored in {}'.format(here))
+    raise IOError
 
 pfo_raw_in_root   = os.path.join(pfo_root, '0_raw')  # Folder where the 20 x 14 brain web files had been downloaded
 pfo_nifti_in_root = os.path.join(pfo_root, 'A_nifti')  # Folder where to create the converted data

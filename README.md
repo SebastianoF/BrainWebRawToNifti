@@ -1,6 +1,6 @@
 ## BrainWebRawToNifti
 
-Essential code to manipulate the downloaded raw data from the BrainWeb dataset and to transform them to nifti.
+Essential code to manipulate the downloaded raw data from the BrainWeb dataset and to convert them to nifti.
 
 ### Motivation
 
@@ -50,14 +50,14 @@ To merge WM, GM and CSF and to obtain a 4 classes segmentations, install [LABels
 
 ### Requirements
 
-The code had been used on Python 2.7 on a MAC, for the dataset downloaded on March 2018 (BrainWeb does not specify if there
+The code had been tested on Python 2.7 on a MAC, for the dataset downloaded on March 2018 (BrainWeb does not specify if there
 is any date for latest release).
 
 It is based on [numpy], [nibabel] and [LABelsToolkit][LABelsToolkit].
 
 ### Acknowledgments
 + If you use the BrainWeb dataset, remember to cite the authors, as specified in the [website][brainweb]. 
-+ This code is developed as a small part of my PhD studies at UCL, [giftsurg][giftsurg] group. My studentship is supported by supported by Wellcome / Engineering and Physical Sciences Research Council (EPSRC).
++ This code is developed as a small part of my PhD studies at UCL, [giftsurg][giftsurg] group. My studentship is supported by Wellcome / Engineering and Physical Sciences Research Council (EPSRC).
 
 
 [giftsurg]: http://www.gift-surg.ac.uk

@@ -8,8 +8,7 @@ go to Float between zero and 1 and then renormalize.
 import os
 import numpy as np
 import nibabel as nib
-
-from LABelsToolkit.main import LABelsToolkit as LaB
+import nilabels as nis
 
 import BrainWebRawToNifti.params as bw
 
@@ -61,14 +60,14 @@ def get_selection_dataset(subset, get_other_tissue_probability=True, keep_fuzzy_
         os.system('cp {} {}'.format(pfi_nifti_T1, pfi_nifti_T1_new))
         os.system('cp {} {}'.format(pfi_nifti_CRISP, pfi_nifti_CRISP_new))
 
-        lab = LaB()
-        lab.manipulate_labels.relabel(pfi_nifti_CRISP_new, pfi_nifti_CRISP_new, old_labels, new_labels)
+        nis_app = nis.App()
+        nis_app.manipulate_labels.relabel(pfi_nifti_CRISP_new, pfi_nifti_CRISP_new, old_labels, new_labels)
 
         pfi_nifti_MASK = os.path.join(pfo_sj_nifti_new, 'BW{}_MASK.nii.gz'.format(sj))
 
         os.system('cp {} {}'.format(pfi_nifti_CRISP_new, pfi_nifti_MASK))
 
-        lab.manipulate_labels.relabel(pfi_nifti_MASK, pfi_nifti_MASK, new_labels, labels_mask)
+        nis_app.manipulate_labels.relabel(pfi_nifti_MASK, pfi_nifti_MASK, new_labels, labels_mask)
 
         list_nib_fuzzy_segm = []
 

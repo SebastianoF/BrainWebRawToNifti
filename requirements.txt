@@ -1,0 +1,3 @@
+nibabel==2.1.0
+nilabels.egg==info
+numpy==1.14.2

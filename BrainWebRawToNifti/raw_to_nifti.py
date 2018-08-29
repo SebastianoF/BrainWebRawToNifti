@@ -10,7 +10,7 @@ import nibabel as nib
 import os
 
 import BrainWebRawToNifti.params as bw
-from LABelsToolkit.tools.aux_methods.utils_rotations import basic_90_rot_ax, axial_90_rotations
+from nilabels.tools.aux_methods.utils_rotations import basic_90_rot_ax, axial_90_rotations
 
 
 def data_to_nifti(pfi_data, pfi_output_nifti, resolution=1.0, shift_intensities=True, swap_ones_with_zeros=False):

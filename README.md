@@ -4,11 +4,11 @@ Essential code to manipulate the downloaded raw data from the BrainWeb dataset a
 
 ### Motivation
 
-The [2015 paper][paoerForsdyke] by Donald R. Forsdyke, extending the letter to Nature [Is your brain really necessarily?][paperLorber] 
-revealed the fact that not so much brain tissue is needed to have normal or even exceptional brain functions.
+The [2015 paper][paperForsdyke] by Donald R. Forsdyke, extending the letter to Nature [Is your brain really necessarily?][paperLorber],
+revealed that not much of brain tissue is needed to have normal or exceptional brain functions.
 
-In the situation where a segmentation algorithm has to be developed or tested, much brains, 
-possibly already segmented, is instead of crucial importance.
+However, in the situation where a segmentation algorithm has to be developed or tested, a good amount of brains, 
+possibly in nifti format and already segmented, is instead of crucial importance.
 
 For this reason the online dataset [BrainWeb][brainweb] provides a synthetic dataset of 20 MRI-like images with ground truth segmentation.
 Each subject has a T1, 12 individual fuzzy segmentations, and the discrete segmentation. 
@@ -46,14 +46,13 @@ creating a label descriptor for ITK-snap visualisation and to provide access to 
     
 ### Extra
 
-To merge WM, GM and CSF and to obtain a 4 classes segmentations, install [LABelsToolkit][LABelsToolkit] and run `get_subset_labels.py`.
+To merge the labels into a 4 classes (WM, GM, CSF and background) segmentation, install [nilabels][nilabels] and run `get_subset_labels.py`.
 
 ### Requirements
 
-The code had been tested on Python 2.7 on a MAC, for the dataset downloaded on March 2018 (BrainWeb does not specify if there
-is any date for latest release).
+The code had been tested on Python 2.7 and Python 3.7 on a MAC, for the dataset downloaded on March 2018 (BrainWeb does not come with a release date).
 
-It is based on [numpy], [nibabel] and [LABelsToolkit][LABelsToolkit].
+It is based on [numpy], [nibabel] and [nilabels][nilabels].
 
 ### Acknowledgments
 + If you use the BrainWeb dataset, remember to cite the authors, as specified in the [website][brainweb]. 
@@ -62,11 +61,11 @@ It is based on [numpy], [nibabel] and [LABelsToolkit][LABelsToolkit].
 
 [giftsurg]: http://www.gift-surg.ac.uk
 [paperLorber]: http://science.sciencemag.org/content/210/4475/1232/tab-pdf
-[paoerForsdyke]: https://link.springer.com/article/10.1007%2Fs13752-015-0219-x
+[paperForsdyke]: https://link.springer.com/article/10.1007%2Fs13752-015-0219-x
 [brainweb]: http://brainweb.bic.mni.mcgill.ca/brainweb/
 [brainweb_subpage]: http://brainweb.bic.mni.mcgill.ca/brainweb/anatomic_normal_20.html
 [giftsurg]: http://www.gift-surg.ac.uk
-[LABelsToolkit]:https://github.com/SebastianoF/LABelsToolkit
+[nilabels]:https://github.com/SebastianoF/nilabels
 [numpy]: http://www.numpy.org/
 [nibabel]: http://nipy.org/nibabel/
 [matplotlib]: https://matplotlib.org/
